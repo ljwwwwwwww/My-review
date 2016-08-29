@@ -1,0 +1,11 @@
+    #my-info{
+        background: url("../image/bgc3_02.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        opacity: 0.9;
+    }
+    #my-book{
+        background: url("../image/bgc4_02_02_02.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
