@@ -45,7 +45,7 @@ img{
     #my-info{
         background: url("../image/bgc3_01.jpg")bottom center fixed;
         background-repeat: no-repeat;
-        background-size: 100% 800px;
+        background-size: 100% auto;
         opacity: 0.9;
         min-height: 350px;
     }
