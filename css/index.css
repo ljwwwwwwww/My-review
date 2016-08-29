@@ -43,7 +43,7 @@ img{
 }
 @media(max-width:750px){
     #my-info{
-        background: url("../image/bgc3_01_02.jpg")bottom center fixed;
+        background: url("../image/bgc3_01_02.jpg")top center fixed;
         background-repeat: no-repeat;
         background-size: 100% auto;
         opacity: 0.9;
@@ -73,12 +73,6 @@ img{
     }
     h2,h2 div{
     	font-size: 15px;
-    }
-    .my-info p{
-    	font-size: 6px;
-    }
-    .skills-bar{
-    	font-size: 8px;
     }
     .my-skills,.my-books,.my-info{
     	padding: 20px 0;
