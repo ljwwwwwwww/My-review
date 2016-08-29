@@ -1,13 +1,13 @@
     #my-info{
-        background: url("../image/bgc2.jpg");
+        background: url("../image/bgc2_02.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
         opacity: 0.9;
-        min-height: 600px;
+        
     }
     #my-book{
         background: url("../image/bgc4_02.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
-        min-height: 600px;
+       
     }
