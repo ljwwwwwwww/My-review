@@ -50,35 +50,36 @@ img{
         min-height: 500px;
     }
     #my-book{
-        background: url("../image/bgc4_02_02.jpg");
+        background: url("../image/bgc4_02_02_02.jpg");
         background-repeat: no-repeat;
         background-size: 100% auto;
         min-height: 500px;
     }
-}
-@media(max-width:550px){
+    .my-skills .skills-title,.my-book .books-title{
+        padding-bottom: 0;
+    }
     .top-info{
-    	width: 100%;
+        width: 100%;
     }
     .email{
-    	width: 100px;
+        width: 100px;
     }
     .hero-title h1{
-    	font-size: 15px;
+        font-size: 15px;
     }
     .top-info .email-block{
-    	left: -80px;
-    	z-index: 6;
+        left: -80px;
+        z-index: 6;
     }
     .top-info .tel-block{
-    	right: -80px;
-    	z-index: 6;
+        right: -80px;
+        z-index: 6;
     }
     h2,h2 div{
-    	font-size: 15px;
+        font-size: 15px;
     }
-    .my-skills,.my-books,.my-info{
-    	padding: 20px 0;
+    .my-skills,.my-book,.my-info{
+        padding: 20px 0;
     }
     .my-book .headfirst,.my-book .projavascript,.my-book .javascriptdom{
         padding-top:20px;
@@ -257,12 +258,13 @@ header,footer{
 }
 /*skillbar end*/
 .my-book{
-    min-height: 600px;
-    background-image: url("../image/bgc4_02.jpg");
+    min-height: 800px;
+    background-image: url("../image/bgc4.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     z-index: -100;
 }
+
    .books-title{
     padding-bottom: 50px;
 }
