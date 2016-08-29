@@ -33,7 +33,7 @@ $(document).ready(function(){
 			$(topInfoWrap).removeClass("top-info-scrolldown");
 	    }
 	    //skillbar
-		if(windowHeight+windowscrollTop<headerHeight+myskillsHeight){
+		if(windowHeight+windowscrollTop<headerHeight+myskillsHeight+200){
 			skillbarprogress(htmlcss,90,1);
 			skillbarprogress(javascript,80,2);
 			skillbarprogress(jquery,80,3);
@@ -41,7 +41,6 @@ $(document).ready(function(){
 			skillbarprogress(angularjs,60,5);
 			skillbarprogress(nodejs,50,6);
 			skillbarprogress(reactjs,40,7);
-			return;
 	    }
 	})
 
