@@ -43,7 +43,7 @@ img{
 }
 @media(max-width:750px){
     #my-info{
-        background: url("../image/bgc3_01_02.jpg")top center fixed;
+        background: url("../image/bgc3_01_03.jpg")bottom center fixed;
         background-repeat: no-repeat;
         background-size: 100% auto;
         opacity: 0.9;
