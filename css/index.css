@@ -42,19 +42,6 @@ img{
     } 
 }
 @media(max-width:650px){
-    #my-info{
-        background: url("../image/bgc3_01.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        opacity: 0.9;
-        min-height: 500px;
-    }
-    #my-book{
-        background: url("../image/bgc4_02_02_02.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        min-height: 500px;
-    }
     .my-skills .skills-title,.my-book .books-title{
         padding-bottom: 0;
     }
@@ -87,21 +74,6 @@ img{
     }
     footer h2,h2 div{
         width: 100px;
-    }
-}
-@media(max-width:900px){
-    #my-info{
-        background: url("../image/bgc2.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        opacity: 0.9;
-        min-height: 500px;
-    }
-    #my-book{
-        background: url("../image/bgc4_02.jpg");
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        min-height: 500px;
     }
 }
 @font-face {
