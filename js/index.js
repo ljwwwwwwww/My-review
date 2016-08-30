@@ -1,20 +1,16 @@
 $(document).ready(function(){
-	var topInfoWrap=$(".top-info-warp");
-	var email=$(".email");
-	var header=$("header");
-	var tel=$(".tel");
-	var emailIcon=$("#top-email");
-	var telIcon=$("#top-phone");
-	var topPhoto=$("#top-photo");
-	var mySkills=$(".my-skills");
-	var skillbar=$(".skills-bar");
-	var skillTile=$(".skills-title");
+	var topInfoWrap=$(".top-info-warp"),email=$(".email"),header=$("header"),tel=$(".tel");
+	var emailIcon=$("#top-email"),telIcon=$("#top-phone"),topPhoto=$("#top-photo");
+	var navList=$("nav"),navListItem=$(navList).find("li"),navLength=$(navListItem).length;
+	console.log(navLength)
+	var mySkills=$(".my-skills"),skillbar=$(".skills-bar"),skillTile=$(".skills-title");
 	var windowHeight,windowscrollTop,headerHeight,mySkillsTop,halfskillbarHeight,myskillsHeight,skilltitleHeight;
 	var htmlcss=$(".html-css"),javascript=$(".javascript"),jquery=$(".jquery"),
 	    bootstrap=$(".bootstrap"),angularjs=$(".angularjs"),nodejs=$(".nodejs"),
 	    reactjs=$(".reactjs");
 	var bookCircle=$(".book-circle"),bookNumber=$(bookCircle).length;
 	var gitIcon=$(".my-project").find("img");
+	var projectLink=$(".project-link"),linkLeft=$(".link-left"),linkRight=$(".link-right");
 	var footerButton=$("footer").find("button");
 	$(window).scroll(function(){
         windowHeight=$(window).innerHeight();
@@ -91,4 +87,18 @@ $(document).ready(function(){
     	    $(gitIcon).removeClass("iconchange");
     	},5000)
     })
+    //projectlink
+    $(projectLink).click(function(){
+    	$(this).addClass("linkdis");
+    	$(linkLeft).addClass("link-left-slide");
+    	$(linkRight).addClass("link-right-slide");
+    })
+    //sidebar-nav
+    for(var i=0;i<navLength;i++){
+    	$(navListItem[i]).hover(function(){
+    		$(this).addClass("navhover")
+    	},function(){
+    		$(this).removeClass("navhover")
+    	})
+    }
 })
