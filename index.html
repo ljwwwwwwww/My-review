@@ -69,12 +69,105 @@
         100%{transform:scale(1.0,1.0);
             -webkit-transform:scale(1.0,1.0);}
     }
-  
-
-
-    .my-project button{
-        display: block;
+    nav{
+        position: fixed;
+        top:20%;
+        right:0;
+        z-index: 9999;
+    }
+    nav ul{
+        list-style: none;
+        text-decoration: none;
+    }
+    nav li{
+        text-indent: 12px;
+        width:80px;
+        height: 40px;
+        line-height: 40px;
+        border-radius:25px 0 0 25px;
+        background-color:rgb(253,133,96);
+        margin-bottom: 5px;
+        margin-right: -20px;
+        cursor: pointer;
+        opacity: 0.9;
+        border: 1px solid rgb(217,83,79);
+        transition:all .5s ease-out;
+        -webkit-transition:all .5s ease-out;
+    }
+    nav a,nav a:hover{
+        text-decoration: none;
+        color: #000;
+    }
+    .navhover{
+        margin-left:-18px;
+    }
+    .navhover a{
+        font-weight: bold;
+    }
+ 
+    .project-link{
         margin:0 auto;
+        background-color: rgb(236,151,31);
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 28px;
+        padding: 0;
+        left: 25%;
+        overflow: hidden;
+    }
+    .project-link a{
+        color: #fff;
+        text-decoration: none;
+    }
+   
+    .project-link:before{
+        content:"Click to get my works!";
+        cursor:pointer;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 28px;
+        background-color: #000;
+        color: #fff;
+        opacity: 0.9;
+        z-index: 10;
+        overflow: hidden;
+    }
+    .linkdis:before{
+        opacity: 0;
+        z-index: -1;
+       
+    }
+   .link-left,.link-right{
+        padding:0;
+        height: 28px;
+        height: 28px;
+        line-height: 28px;
+        background-color: #000;
+        opacity: 0.9;
+        z-index: 5;
+        position: absolute;
+    }
+    .link-left{
+        border-radius: 28px 0 0 28px;
+        left: 0%;
+        transition:left 2s ease-out;
+        -webkit-transition:left 2s ease-out;
+    }
+    .link-right{
+        border-radius: 0 28px 28px 0 ;
+        left: 50%;
+        transition:left 2s ease-out;
+        -webkit-transition:left 2s ease-out;
+    }                                          /*动画冲突？*/
+    .link-left-slide{
+        left: -50%
+    }
+    .link-right-slide{
+        left: 100%;
     }
     .project-title{
         padding-bottom: 20px;
@@ -94,7 +187,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="header-container">
                 <div class="top-info-warp">
                     <div class="top-info">
@@ -124,8 +217,16 @@
         </div>
     </header>
     <!--header end-->
-
-    <section class="my-skills">
+    <nav>
+        <ul>
+            <li><a href="#header">Top</a></li>
+            <li><a href="#my-skills">Skill</a></li>
+            <li><a href="#my-project">Works</a></li>
+            <li><a href="#my-book">books</a></li>
+            <li><a href="#my-info">Info</a></li>
+        </ul>
+    </nav>
+    <section class="my-skills" id="my-skills">
     	<div class="container">
             <div class="skills-title">
                 <h2>My skills</h2>
@@ -260,7 +361,8 @@
     	</div>
     </section>
     <!--mybook end-->
-    <section class="my-project">
+
+    <section class="my-project" id="my-project">
         <div class="container">
             <div class="project-title">
                 <h2>My works</h2>
@@ -272,12 +374,19 @@
                 <div class="col-xs-12">
                      <img src="image/giticon.png">
                 </div>
-                <div class="col-xs-12">
-                     <button class="btn btn-warning">https://ljwwwwwwww.github.io/zhihu-Homepage</button>
+                    
+                     <div class="col-xs-6 project-link">
+                         <div class="col-xs-6 link-left"></div>
+                         <div class="col-xs-6 link-right"></div>
+                         <a href="https://ljwwwwwwww.github.io/zhihu-Homepage" target="blank">ljwwwwwwww.github.io/zhihu-Homepage</a>
+                     </div>
+                    
                 </div>
             </div>
         </div>
     </section>
+    <!--myproject end-->
+
     <footer>
     	<div class="container">
             <div class="row">
