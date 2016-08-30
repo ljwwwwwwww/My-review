@@ -150,7 +150,7 @@ header,footer{
 	border-radius: 120px;
 	border: 10px solid #fff;
 	overflow: hidden;
-    background-image: url("../image/photo_01.png");
+    background-image: url("../image/photo_01.jpg");
     background-repeat: no-repeat;
     background-position: -20px -20px;
     opacity: 0.8;
@@ -159,7 +159,7 @@ header,footer{
 }
 #top-photo:hover{
     opacity: 1;
-    background-image: url("../image/photo_02.png");
+    background-image: url("../image/photo_02.jpg");
     background-position: -66px -34px;
 }
 .email,.tel{
