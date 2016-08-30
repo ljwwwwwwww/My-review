@@ -141,6 +141,7 @@ header,footer{
     margin-right: 20%;
 }
 #top-photo{
+    cursor:pointer;
 	position: absolute;
 	left: 50%;
 	top:0;
@@ -150,17 +151,26 @@ header,footer{
 	border-radius: 120px;
 	border: 10px solid #fff;
 	overflow: hidden;
-    background-image: url("../image/photo_01.jpg");
+    background-image: url("../image/photo_02.jpg");
     background-repeat: no-repeat;
-    background-position: -20px -20px;
-    opacity: 0.8;
+    background-position: -66px -34px;
     transition:opacity .5s ease-out;
     -webkit-transition:opacity .5s ease-out;
 }
-#top-photo:hover{
-    opacity: 1;
-    background-image: url("../image/photo_02.jpg");
-    background-position: -66px -34px;
+#top-photo:before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-image: url("../image/photo_01.jpg");
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+    transition:opacity .5s ease-out;
+    -webkit-transition:opacity .5s ease-out;
+}
+.photo-hover:before{
+    opacity: 0;
 }
 .email,.tel{
 	position: absolute;
@@ -245,11 +255,11 @@ header,footer{
 }
 /*skillbar end*/
 .my-book{
-    min-height: 800px;
+    min-height:600px;
     background-image: url("../image/bgc4.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    z-index: -100;
+    
 }
 
    .books-title{

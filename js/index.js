@@ -5,6 +5,7 @@ $(document).ready(function(){
 	var tel=$(".tel");
 	var emailIcon=$("#top-email");
 	var telIcon=$("#top-phone");
+	var topPhoto=$("#top-photo");
 	var mySkills=$(".my-skills");
 	var skillbar=$(".skills-bar");
 	var skillTile=$(".skills-title");
@@ -13,6 +14,7 @@ $(document).ready(function(){
 	    bootstrap=$(".bootstrap"),angularjs=$(".angularjs"),nodejs=$(".nodejs"),
 	    reactjs=$(".reactjs");
 	var bookCircle=$(".book-circle"),bookNumber=$(bookCircle).length;
+	var gitIcon=$(".my-project").find("img");
 	var footerButton=$("footer").find("button");
 	$(window).scroll(function(){
         windowHeight=$(window).innerHeight();
@@ -69,8 +71,24 @@ $(document).ready(function(){
 	        $(this).addClass("book-circle-fade")},
 	        function(){$(this).removeClass("book-circle-fade")})
     }
+    //photofade
+    $(topPhoto).hover(function(){
+            $(this).addClass("photo-hover");
+        },
+    	function(){
+    		$(this).removeClass("photo-hover");
+    	})
     //footer
     $(footerButton).click(function(){
     	$(window).scrollTop(0);
+    })
+    //giticonchange
+    var timeout;
+    $(gitIcon).mouseenter(function(){
+    	clearTimeout(timeout);
+    	$(this).addClass("iconchange");
+    	timeout=setTimeout(function(){
+    	    $(gitIcon).removeClass("iconchange");
+    	},5000)
     })
 })
